@@ -1,19 +1,19 @@
 
 @font-face {
     font-family: RobotoLight;
-    src: url(/Fonts/Roboto/Roboto-Light.ttf);
+    src: url(fonts/Roboto/Roboto-Light.ttf);
 }
 @font-face {
     font-family: RobotoMedium;
-    src: url(/Fonts/Roboto/Roboto-Medium.ttf);
+    src: url(fonts/Roboto/Roboto-Medium.ttf);
 }
 @font-face {
     font-family: ArialBlack;
-    src: url(/Fonts/Arial/arial_black.ttf);
+    src: url(fonts/Arial/arial_black.ttf);
 }
 @font-face {
     font-family: Pristina;
-    src: url(/Fonts/Pristina.ttf);
+    src: url(fonts/Pristina.ttf);
 }
 html{
     padding: 0;
