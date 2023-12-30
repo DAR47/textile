@@ -1,0 +1,308 @@
+
+@font-face {
+    font-family: RobotoLight;
+    src: url(/Fonts/Roboto/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: RobotoMedium;
+    src: url(/Fonts/Roboto/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: ArialBlack;
+    src: url(/Fonts/Arial/arial_black.ttf);
+}
+@font-face {
+    font-family: Pristina;
+    src: url(/Fonts/Pristina.ttf);
+}
+html{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(/img/white-fabric-texture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 70vmax;
+    padding: 0.5vmax 5vmax;
+    overflow:visible;
+    background-color: #ffffff;
+    
+}
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-between;
+    margin: 0 auto;
+    border-radius: 20%;
+    position: fixed;
+    top: 0;
+    
+}
+.header__fake {
+    position: relative;
+    top: 0;
+    height: 5.7082vmax;
+}
+.headerInner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(207, 207, 207);
+    background-size: cover;
+    width: 100%;
+    padding: 0.2vmax 15vmax;
+
+    
+}
+.header__logo {
+    width:10vmax;
+    fill: rgb(0, 0, 0);
+}
+.header__links {
+    width: fit-content;
+    display:flex;
+    text-decoration: none;
+    position: relative;
+}
+.header__link {
+    margin-left: 2vmax;
+    font-size: 1.5vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    height: fit-content;
+}
+
+.header__linkTop {
+    font-family: RobotoMedium;
+    text-decoration: none;
+    font-size: 1.5vmax;
+    color:rgb(0, 0, 0);
+    transition: all 0.2s;
+    pointer-events: painted;
+    z-index: 1;
+}
+.header__linkTop::before{
+    content: "";
+    border-color: rgba(165, 42, 42, 0.678);
+    background-color: rgba(165, 42, 42, 0.678);
+    width: 20%;
+    border-width: 0.12vmax;
+    border-style:solid;
+    position:absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 200px;
+    opacity: 0;
+    transition: all 0.3s ;
+}
+.header__link:hover .header__linkTop::before{
+    opacity: 1;
+    width: 90%;
+}
+.header__linkBottom {
+    position: absolute;
+    width: 160%;
+    padding-top:1.5vmax;
+    user-select: none;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.2s;
+    
+}
+.header__link:hover .header__linkTop{
+    color: rgba(165, 42, 42, 0.678);
+}
+.header__link:hover .header__linkBottom{
+    padding-top:3vmax;
+    user-select: none;
+    pointer-events:painted;
+    opacity: 1;
+
+
+}
+.header__linkBottomItems {
+    width: 100%;
+    font-family: RobotoMedium;
+    text-decoration: none;
+    font-size: 1vmax;
+    display: flex;
+    flex-direction: column;
+    text-align: center;    
+    background-color: rgb(236, 236, 236);
+    padding: 0.2vmax;
+    border-radius: 0.3vmax;
+    justify-content: space-between ;
+    padding: 1vmax 0;
+
+}
+.linkBottom {
+    font-family: RobotoMedium;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1vmax;
+    color:rgba(165, 42, 42, 0.678);
+    transition: all 0.2s;
+    
+}
+.linkBottom:hover{
+    color: rgb(0, 0, 0);
+}
+.inf {
+    
+}
+.inf__inner {
+    padding-top: 2vmax;
+
+}
+.inf__innerText {
+    font-size: 1.5vmax;
+    font-family: RobotoLight;
+}
+p{
+    text-indent: 3vmax;
+    padding-bottom: 1vmax;
+}
+.linkBottom {
+    font-family: RobotoMedium;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1vmax;
+    color:rgba(165, 42, 42, 0.678);
+    transition: all 0.2s;
+    
+}
+.linkBottom:hover{
+    color: rgb(0, 0, 0);
+}
+.activity {
+    
+}
+.activity__inner {
+    padding-top: 2vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+
+}
+.activity__innerText {
+    font-size: 1.5vmax;
+    font-family: RobotoLight;
+    color: rgb(0, 0, 0);
+}
+.activity__img{
+    width: 70%;
+}
+img{
+    width: 100%;
+}
+.index__container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 70vmax;
+    padding: 0.5vmax 5vmax;
+    overflow:visible;
+}
+.intro{
+    background-color: #ffffff73;
+}
+.intro__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.intro__innerText {
+    text-align: center;
+    padding: 4vmax 0;
+}
+.intro__innerTitle {
+    font-family: ArialBlack;
+    font-size: 5vmax;
+    text-transform: uppercase;
+}
+.index__container {
+}
+.products__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.products__Title {
+    padding: 2vmax 0 ;
+    font-family: RobotoMedium;
+    font-size: 2vmax;
+    color: #000;
+}
+.products__blocks {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+}
+.products__blocksItem {
+    position: relative;
+    width: 23vmax;
+    height: 23vmax;
+    background-size: cover;
+    background-position: center;   
+    border-radius: 1%; 
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.products__dark {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #00000057;
+}
+.products__blocksTitle {
+    color: #ffffff;
+    font-family: ArialBlack;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2vmax;
+    z-index: 1;
+    text-shadow: 0vmax 0vmax 2vmax #000;
+    transition: all 0.3s;
+}
+.products__red {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #d1000067;
+    opacity: 0;
+    transform: scale(0.1);
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+.products__blocksItem:hover .products__red{
+    transform: scale(1);
+    border-radius: 0;
+    opacity: 1;
+}
+.products__blocksItem:hover .products__blocksTitle {
+    color: #000;
+}
